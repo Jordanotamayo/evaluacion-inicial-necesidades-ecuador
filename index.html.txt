@@ -1,0 +1,162 @@
+index.html
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Formulario Evaluación Inicial de Necesidades</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f6f9;
+            margin: 20px;
+        }
+        h1 {
+            text-align: center;
+            color: #1a3c6e;
+        }
+        form {
+            background-color: #ffffff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0px 0px 10px rgba(0,0,0,0.1);
+        }
+        fieldset {
+            margin-bottom: 20px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+            padding: 15px;
+        }
+        legend {
+            font-weight: bold;
+            color: #1a3c6e;
+        }
+        label {
+            display: block;
+            margin-top: 10px;
+        }
+        input, textarea, select {
+            width: 100%;
+            padding: 6px;
+            margin-top: 4px;
+            border-radius: 4px;
+            border: 1px solid #ccc;
+        }
+        button {
+            margin-top: 15px;
+            padding: 10px 15px;
+            background-color: #1a3c6e;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #274d8a;
+        }
+    </style>
+</head>
+<body>
+
+<h1>Formulario de Evaluación Inicial de Necesidades</h1>
+
+<form>
+
+    <fieldset>
+        <legend>1. Ubicación Geográfica</legend>
+        <label>Provincia:</label>
+        <input type="text" name="provincia">
+
+        <label>Cantón:</label>
+        <input type="text" name="canton">
+
+        <label>Parroquia:</label>
+        <input type="text" name="parroquia">
+
+        <label>Tipo de zona:</label>
+        <select name="zona">
+            <option>Urbana</option>
+            <option>Rural</option>
+            <option>Periurbana</option>
+        </select>
+    </fieldset>
+
+    <fieldset>
+        <legend>2. Fecha y Tipo de Evento</legend>
+        <label>Fecha:</label>
+        <input type="date" name="fecha">
+
+        <label>Tipo de evento:</label>
+        <select name="tipo_evento">
+            <option>Hidrometeorológico</option>
+            <option>Geológico</option>
+            <option>Antrópico</option>
+        </select>
+    </fieldset>
+
+    <fieldset>
+        <legend>3. Población Impactada</legend>
+        <label>Número estimado de personas afectadas:</label>
+        <input type="number" name="poblacion">
+
+        <label>Grupos vulnerables identificados:</label>
+        <textarea name="vulnerables"></textarea>
+    </fieldset>
+
+    <fieldset>
+        <legend>4. Afectación a Medios de Vida</legend>
+        <textarea name="medios_vida"></textarea>
+    </fieldset>
+
+    <fieldset>
+        <legend>5. Daños en Viviendas</legend>
+        <textarea name="danos_viviendas"></textarea>
+    </fieldset>
+
+    <fieldset>
+        <legend>6. Daños en Servicios e Infraestructura</legend>
+        <textarea name="danos_servicios"></textarea>
+    </fieldset>
+
+    <fieldset>
+        <legend>7. Salud y Alimentación</legend>
+        <textarea name="salud_alimentacion"></textarea>
+    </fieldset>
+
+    <fieldset>
+        <legend>8. Situación de Asistencia Humanitaria</legend>
+        <textarea name="asistencia"></textarea>
+    </fieldset>
+
+    <fieldset>
+        <legend>9. Capacidad de Atención</legend>
+        <textarea name="capacidad"></textarea>
+    </fieldset>
+
+    <fieldset>
+        <legend>10. Necesidades de Respuesta</legend>
+        <textarea name="necesidades"></textarea>
+    </fieldset>
+
+    <fieldset>
+        <legend>11. Comentarios y Observaciones</legend>
+        <textarea name="comentarios"></textarea>
+    </fieldset>
+
+    <fieldset>
+        <legend>12. Información del Equipo de Evaluación</legend>
+        <label>Nombre del Evaluador:</label>
+        <input type="text" name="evaluador">
+
+        <label>Institución:</label>
+        <input type="text" name="institucion">
+
+        <label>Fecha de Evaluación:</label>
+        <input type="date" name="fecha_evaluacion">
+    </fieldset>
+
+    <button type="submit">Guardar Información</button>
+
+</form>
+
+</body>
+</html>
